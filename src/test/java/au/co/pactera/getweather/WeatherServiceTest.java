@@ -47,9 +47,9 @@ public class WeatherServiceTest {
 		//propertyInfo.setOpenUrl(url);
 	 }*/
 	
-	@Test(expected=JSONException.class)
+	@Test(expected=RuntimeException.class)
 	public void failueTestUnknownCityName() throws IOException, Exception {
-		weatherService.getWeatherInfoByCd("a1111234", "Melbourne");
+		weatherService.getWeatherInfoByCd("1111234", "Melbourne");
 	 }
 
 
